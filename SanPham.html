@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/web-logo.png">
+    <title>Nhà sách Tiến Thọ</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="SanPham.css">
+</head>
+<body>
+    <div class="head">
+        <div class="header">
+            <a href="index.html" title="Nhà sách Tiến Thọ">
+                <img src="images/logo.png">
+            </a>
+            <div class="searchbox">
+                <input type="text" class="search" placeholder="Bạn muốn tìm gì?">
+                <span class="icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </span>
+            </div>
+            <div class="other">
+                <a class="call" href="tel:0941234828" title="Hotline">
+                    <img src="images/phone-call.svg"><p style="font-size: 17px; font-weight: 600;">094.1234.828</p>
+                </a>
+                <a class="user" href="Dangnhap1.html" title="Đăng nhập">
+                    <img src="images/user.svg">
+                </a>
+                <a class="cart" href="#" title="Giỏ hàng">
+                    <img src="images/shopping-bag.svg">
+                    <p id="quantity-cart">0</p>
+                </a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul class="main-menu">
+                <li class="main-menu-item"><a href="index.html" title="Trang chủ">TRANG CHỦ</a></li>
+                <li class="main-menu-item"><a href="Gioithieu2.html" title="Giới thiệu">GIỚI THIỆU</a></li>
+                <li class="main-menu-item product"><a href="SanPham.html" title="Sản phẩm">SẢN PHẨM<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <div class="image-menu"><img title="Sản phẩm" width="260" height="260" src="images/mega-1-image.webp"></div>
+                </li>
+                <li class="main-menu-item"><a href="#" title="Tư vấn mua sắm">TƯ VẤN MUA SẮM<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <ul class="dropdown">
+                        <li class="menu-item"><a href="" title="Review Sách">Review Sách</a></li>
+                        <li class="menu-item"><a href="" title="Đồ Chơi Cho Bé">Đồ Chơi Cho Bé</a></li>
+                        <li class="menu-item"><a href="" title="Đồ Dùng Văn Phòng Phẩm">Đồ Dùng Văn Phòng Phẩm</a></li>
+                        <li class="menu-item"><a href="" title="Khuyến Mại Và Ưu Đãi">Khuyến Mại Và Ưu Đãi</a></li>
+                    </ul>
+                </li>
+                <li class="main-menu-item"><a href="LienHe2.html" title="Liên hệ">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="url">
+            <a class="home" href="index.html" title="Trang chủ"><p>Trang chủ</p></a>
+            <p>&ensp;/&ensp;</p>
+            <p class="name-product">Tất cả sản phẩm</p>
+        </div>
+        <div class="all-product">
+            <div class="product-filter">
+                <div class="product-filter-heading">
+                    <ion-icon name="funnel-outline" style="font-size: 30px;"></ion-icon>
+                    <p style="font-size: 16px; margin-top: 5px;">LỌC SẢN PHẨM</p>
+                </div>
+                <div class="product-filter-brand">
+                    <div class="filter-brand">
+                        <p style="font-size: 14px;"><strong>THƯƠNG HIỆU</strong></p>
+                        <div class="search-brand">
+                            <input class="input-search-brand" type="text" placeholder="Tìm Thương Hiệu">
+                            <button class="button-search-brand"><ion-icon name="search-outline" style="font-size: 20px;"></ion-icon></button>
+                        </div>
+                        <!-- <div class="find-brand">
+                            
+                        </div> -->
+                    </div>
+                    <hr style="opacity: 0.2;">
+                    <div class="filter-price">
+                        <p style="font-size: 15px;">GIÁ SẢN PHẨM</p>
+                    </div>
+                    <hr style="opacity: 0.2;">
+                    <div class="filter-genre">
+                        <p style="font-size: 15px;">LOẠI</p>
+                        <div class="search-genre">
+                            <input class="input-search-genre" type="text" placeholder="Tìm loại">
+                            <button class="button-search-genre"><ion-icon name="search-outline" style="font-size: 20px;"></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-heading">
+                    <p style="font-size: 18px;">DANH MỤC</p>
+                </div>
+                <div class="category-main-1">
+                    <div class="category-in-main">
+                        <div class="category-product-img">
+                            <span class="discount-tag">- 10%</span>
+                            <a class="img-category-product" href="ChiTietSP.html" title="Vở Bài Tập Nâng Cao Từ Và Câu Lớp 3 - Biên Soạn Theo Chương Trình GDPT Mới - Bộ Cánh Diều - Ndbooks"><img width="200px" style="margin-left: 10px;" src="images/01.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="ChiTietSP.html" title="Vở Bài Tập Nâng Cao Từ Và Câu Lớp 3 - Biên Soạn Theo Chương Trình GDPT Mới - Bộ Cánh Diều - Ndbooks"><p>Vở Bài Tập Nâng Cao Từ Và Câu Lớp 3 - Biên Soạn Theo Chương Trình GDPT Mới - Bộ Cánh Diều - Ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">71.100đ</p>
+                                <p class="actual-price">79.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-in-main">
+                        <div class="category-product-img">
+                            <a class="img-category-product" href="#" title="Vở Bài Tập Nâng Cao Từ Và Câu Lớp 2 - Biên Soạn Theo Chương Trình GDPT Mới - Bộ Cánh Diều - Ndbooks"><img width="140px" style="margin-left: 40px; margin-bottom: -3px;" src="images/same-brand-1.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Vở Bài Tập Nâng Cao Từ Và Câu Lớp 2 - Biên Soạn Theo Chương Trình GDPT Mới - Bộ Cánh Diều - Ndbooks"><p>Vở Bài Tập Nâng Cao Từ Và Câu Lớp 2 - Biên Soạn Theo Chương Trình GDPT Mới - Bộ Cánh Diều - Ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">79.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-in-main">
+                        <div class="category-product-img">
+                            <a class="img-category-product" href="#" title="Vở ô ly Bài Tập Toán * KN * lớp 1 , quyển 2"><img width="150px" style="margin-left: 35px; margin-bottom: 1px;" src="images/product-3.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Vở ô ly Bài Tập Toán * KN * lớp 1 , quyển 2"><p>Vở ô ly Bài Tập Toán * KN * lớp 1 , quyển 2</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">26.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-in-main">
+                        <div class="category-product-img">
+                            <span class="discount-tag">- 10%</span>
+                            <a class="img-category-product" href="#" title="Phát Triển Trí Thông Minh Toán Lớp 1 ( Biên soạn theo chương trình GDPT Mới ) - Ndbooks"><img width="140px" style="margin-left: 40px; margin-bottom: 1px;" src="images/same-brand-2.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Phát Triển Trí Thông Minh Toán Lớp 1 ( Biên soạn theo chương trình GDPT Mới ) - Ndbooks"><p>Phát Triển Trí Thông Minh Toán Lớp 1 ( Biên soạn theo chương trình GDPT Mới ) - Ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">40.500đ</p>
+                                <p class="actual-price">45.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-main-2">
+                    <div class="category-in-main">
+                        <div class="category-product-img">
+                            <span class="discount-tag">- 10%</span>
+                            <a class="img-category-product" href="#" title="Chắp Cánh Cùng Bé - Tập Viết - Bí quyết giúp con luyện viết chữ đẹp - Ndbooks"><img width="215px" style="margin-top: 29px; margin-bottom: 19px;" src="images/product-5.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Chắp Cánh Cùng Bé - Tập Viết - Bí quyết giúp con luyện viết chữ đẹp - Ndbooks"><p>Chắp Cánh Cùng Bé - Tập Viết - Bí quyết giúp con luyện viết chữ đẹp - Ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">62.100đ</p>
+                                <p class="actual-price">69.000đ</p>
+                            </div>
+                        </div>
+                    </div><div class="category-in-main">
+                        <div class="category-product-img">
+                            <span class="discount-tag">- 10%</span>
+                            <a class="img-category-product" href="#" title="Bài Tập Tuần Toán 2 tập 2- Biên soạn theo chương trình GDPT mới - Kết Nối - Ndbooks"><img width="180px" style="margin-left: 20px; margin-bottom: 2px;" src="images/same-brand-3.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Bài Tập Tuần Toán 2 tập 2- Biên soạn theo chương trình GDPT mới - Kết Nối - Ndbooks"><p>Bài Tập Tuần Toán 2 tập 2- Biên soạn theo chương trình GDPT mới - Kết Nối - Ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">36.000đ</p>
+                                <p class="actual-price">40.000đ</p>
+                            </div>
+                        </div>
+                    </div><div class="category-in-main">
+                        <div class="category-product-img">
+                            <span class="discount-tag">- 10%</span>
+                            <a class="img-category-product" href="#" title="Bài Tập Tuần Toán 1 tập 2- Biên soạn theo chương trình GDPT mới - Kết Nối - Ndbooks"><img width="180px" style="margin-left: 20px; margin-bottom: 2px;" src="images/same-brand-4.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Bài Tập Tuần Toán 1 tập 2- Biên soạn theo chương trình GDPT mới - Kết Nối - Ndbooks"><p>Bài Tập Tuần Toán 1 tập 2- Biên soạn theo chương trình GDPT mới - Kết Nối - Ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">36.000đ</p>
+                                <p class="actual-price">40.000đ</p>
+                            </div>
+                        </div>
+                    </div><div class="category-in-main">
+                        <div class="category-product-img">
+                            <a class="img-category-product" href="#" title="45 Đề Ôn Luyện và Kiểm Tra Toán 3 tập 2 - Biên soạn theo chương trình giáo dục phổ thông mới - ndbooks"><img width="200px" src="images/same-brand-5.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="45 Đề Ôn Luyện và Kiểm Tra Toán 3 tập 2 - Biên soạn theo chương trình giáo dục phổ thông mới - ndbooks"><p>45 Đề Ôn Luyện và Kiểm Tra Toán 3 tập 2 - Biên soạn theo chương trình giáo dục phổ thông mới - ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">79.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-main-3">
+                    <div class="category-in-main">
+                        <div class="category-product-img">
+                            <a class="img-category-product" href="#" title="Bài Tập Tuần Toán 2 Tập 2 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks"><img width="180px" style="margin-left: 20px; margin-bottom: 2px;" src="images/product-9.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Bài Tập Tuần Toán 2 Tập 2 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks"><p>Bài Tập Tuần Toán 2 Tập 2 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">40.000đ</p>
+                            </div>
+                        </div>
+                    </div><div class="category-in-main">
+                        <div class="category-product-img">
+                            <span class="discount-tag">- 10%</span>
+                            <a class="img-category-product" href="#" title="Bài Tập Tuần Toán 2 Tập 1 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks"><img width="180px" style="margin-left: 20px; margin-bottom: 2px;" src="images/product-10.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Bài Tập Tuần Toán 2 Tập 1 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks"><p>Bài Tập Tuần Toán 2 Tập 1 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">30.000đ</p>
+                                <p class="actual-price">40.000đ</p>
+                            </div>
+                        </div>
+                    </div><div class="category-in-main">
+                        <div class="category-product-img">
+                            <a class="img-category-product" href="#" title="Bài Tập Tuần Toán 3 Tập 2 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks"><img width="175px" style="margin-left: 20px; margin-bottom: 2px;" src="images/product-11.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Bài Tập Tuần Toán 3 Tập 2 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks"><p>Bài Tập Tuần Toán 3 Tập 2 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">40.000đ</p>
+                            </div>
+                        </div>
+                    </div><div class="category-in-main">
+                        <div class="category-product-img">
+                            <span class="discount-tag">- 10%</span>
+                            <a class="img-category-product" href="#" title="Bài Tập Tuần Toán 3 Tập 1 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks"><img width="175px" style="margin-left: 20px; margin-bottom: 2px;" src="images/product-12.webp"></a>
+                            <button class="buy-now" title="Mua ngay"><ion-icon name="basket-outline"></ion-icon></button>
+                            <button class="add-to-cart" onclick="increQuantity()" title="Thêm vào giỏ"><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+                        <div class="category-product-text">
+                            <a class="product-title" href="#" title="Bài Tập Tuần Toán 3 Tập 1 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks"><p>Bài Tập Tuần Toán 3 Tập 1 - Biên soạn theo chương trình GDPT mới - Cánh Diều - ndbooks</p></a>
+                            <div class="product-price">
+                                <p class="sale-price">30.000đ</p>
+                                <p class="actual-price">40.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="register-mess">
+            <div class="register-text">
+                <h2>Đăng ký nhận tin</h2>
+                <p>Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+            </div>
+            <div class="register-email">
+                <input type="text" placeholder="Địa chỉ Email">
+                <button><p>Đăng ký</p></button>
+            </div>
+        </div>
+        <hr style="margin-left: 230px; margin-right: 230px; opacity: 0.1;">
+        <div class="connection-link">
+            <a href="index.html" title="Nhà Sách Tiến Thọ">
+                <img width="225" src="images/logo.png">
+            </a>
+            <div class="conn-medium">
+                <h3 style="font-size: 24px; color: #fff;">Liên kết nhanh</h3>
+                <hr style="margin-top: 10px; opacity: 0.1; width: 360px;">
+                <hr class="hr-2" color="#0abaff" width="55px" size="1px">
+                <ul>
+                    <li class="icon-link"><a href="#" title="Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="icon-link"><a href="#" title="Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li class="icon-link"><a href="#" title="Youtube"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                    <li class="icon-link"><a href="#" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+            <div class="conn-right">
+                <h3 style="font-size: 24px; color: #fff;">Thông tin liên hệ</h3>
+                <hr style="margin-top: 10px; opacity: 0.1; width: 360px;">
+                <hr class="hr-2" color="#0abaff" width="55px" size="1px">
+                <p>
+                    <strong>Địa chỉ:</strong><br>
+                    Cơ sở 1: 828 Đường Láng - Đống Đa - Hà Nội<br>
+                    ☎️Hotline : 094.1234.828<br>
+                    Cơ sở 2: 36 Xuân Thủy - Cầu Giấy - Hà Nội<br>
+                    ☎️Hotline: 093.417.3636<br>
+                    Cơ sở 3 : 424 Nguyễn Trãi - Thanh Xuân - Hà Nội<br>
+                    ☎️Hotline: 0966 .688. 424<br>
+                    Cơ sở 4 : 697 Giải Phóng - Hoàng Mai - Hà Nội<br>
+                    ☎️Hotline: 0933.695.697<br>
+                    Cơ sở 5 : 50 Nguyễn Thị Lưu - T.P Bắc Giang<br>
+                    ☎️Hotline: 0948.555.050<br>
+                    Cơ sở 6 : 282a Lương Ngọc Quyến - Thái Nguyên<br>
+                    ☎️Hotline: 0906.233.282<br>
+                    Cơ sở 7: 456 Lý Bôn - Đề Thám - Thái Bình<br>
+                    ☎️ Hotline: 0932 429 456
+                </p>
+                <p><strong>Email:</strong><a class="all-link" href="#" style="color: #fff;"><span>&emsp;tienthobooks@gmail.com</span></a></p>
+                <p><strong>Điện thoại:</strong><a class="all-link" href="tel:0941234828" style="color: #fff;"><span>&emsp;094.1234.828</span></a></p>
+                <p><strong>Zalo:</strong><a class="all-link" href="#" style="color: #fff;"><span>&emsp;093.417.3636</span></a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="float"  onclick="actTurn()">
+        <span>+</span>
+        <ul>
+            <li class="phone">
+                <a href="tel:0941234828"><img width="45px" src="images/telephone.svg">
+                    <p id="te">094.1234.828</p>
+                </a>
+            </li>
+            <hr>
+            <li class="zalo">
+                <a href="#">
+                    <div class="cir1">
+                        <div class="cir2"><p style="font-size: 9px; color: #3b5998;"><strong>Zalo</strong></p></div>
+                    </div>
+                    <p id="zal">Zalo: 093.417.3636</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function actTurn() {
+            var float = document.querySelector('.float');
+            float.classList.toggle('action');
+        }
+    </script>
+
+    <a href="#" class="to-top" title="Lên đầu trang">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+    <script src="ScrollTop.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding:0 ;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+.ctn{
+    width: 100%;
+    height: 220px;
+}
+.ctn1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding-left: 200px;
+    padding-top: 10px;
+    
+}
+.ctn2{
+    width: 430px;
+    height: 20px;
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 25px;
+    outline: none;
+}
+.ctn2 input{
+    width: 350px;
+    height: 39px;
+    float: left;
+    font-size: 15px;
+    border: none;
+    margin: 1px auto;
+    border: 1px solid #c0c0c0;
+    padding-left: 30px;
+}
+.ctn2 button.icon{
+    width:48px;
+    height: 42px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: deepskyblue;
+}
+.ctn2 button.icon:hover{
+    background-color:deepskyblue;
+}
+.ctn3{
+    display: flex;
+}
+.ctn3 img{
+    width: 25px;
+}
+.call{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-right: 30px;
+    padding-left: 100px;
+    color:deepskyblue;
+}
+.call img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    animation: shake .2s infinite;
+    animation-duration: 2s;
+}
+.call:hover{
+    color: #009ad6;
+}
+@keyframes shake{
+    0%{
+        transform: translate(0);
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translate(.3em);
+    }
+    10%,
+    30%,
+    50%{
+        transform: translate(-.3em);
+    }
+    70%,
+    100%{
+        transform: translate(0);
+    }
+}
+.user {
+    margin-right: 30px;
+    margin-top: 33px;
+}
+.cart{
+    margin-top: 33px;
+}
+.ctn4{
+    padding-top: 20px;
+}
+.ctn4 nav li:hover ul{
+    display: block;
+}
+nav{
+    display: block;
+    margin: 0 auto 20px;
+    border: 2px solid deepskyblue;
+    position: relative;
+    background-color: deepskyblue;
+     font:16px Tahoma, Sans-serif;
+}
+nav ul { 
+    padding:0;
+     margin:0; 
+    }
+nav li { 
+    position:relative; 
+    float:left; 
+ }
+nav ul:after {
+     content:"."; display:block; height:0; clear:both; visibility:hidden; }
+nav li a { 
+    display:block; padding:10px 104px; border-left:1px solid #eee; border-right:1px solid #eee ;color:#eee;  }
+nav li a:focus { 
+    outline:none; text-decoration:underline; }
+nav li:first-child a { 
+    border-left:none; }
+nav li.last a { 
+    border-right:none; }
+nav a span { display:block; float:right; margin-left:5px; }
+nav ul ul { display:none; width:100%; position:absolute; left:0; background:deepskyblue; }
+nav ul ul li { float:none; }
+nav ul ul a { padding:12px 70px; border-left:none; border-right:none; font-size:14px; }
+nav ul ul a:hover { background-color:cornflowerblue; }
+#sub li a{
+    color: black; background-color :#eee;
+}
+#sub li a:hover{
+    color: deepskyblue;
+}
+#image-menu{
+    
+    width: 600px;
+    height: 200px;
+    background-color: #eee;
+}
+
+#image-menu img{
+    float: left;
+    padding-top: 10px;
+    padding-left: 400px ;
+}
+
+.ngv1{
+    width: 100%;
+    height: 30px;
+    padding-left: 200px;
+    padding-top: 10px;
+}
+.ngv1 ul{
+    display: flex;
+}
+.ngv1 ul li{
+    float: left;
+}
+.ngv1_1{
+    color:#c0c0c0;
+}
+.ngv1_1:hover{
+    color: deepskyblue;
+}
+.ngv1_2{
+    color: deepskyblue;
+}
+.content{
+    float: left;
+    width: 100%;
+    min-height: 800px;
+    padding-top: 20px;
+}
+.box{
+    margin-bottom: 10px;
+    float:left;
+    width:80%;
+    margin: 0 auto;
+    padding-left: 200px;
+}
+.box1{
+    width: 50%;
+   float:left;
+    margin-right: 0%;
+}
+.box1 p{
+    font-size: 25px;
+    font-family: arial;
+    font-weight: 400;
+}
+.add1{
+    font-size: 18px;
+    padding-top: 40px;
+}
+.add2:hover{
+    color:#009ad6;
+}
+.box1_1{
+    padding-top: 15px;
+}
+.box1_1 img{
+    width: 30px;
+}
+.phone{
+    color: black;
+}
+.gmail{
+    color: black;
+}
+.phone:hover{
+    color: #009ad6;
+}
+.gmail:hover{
+    color: #009ad6;
+}
+
+
+.box2{
+    width: 50%;
+    float:left;
+    margin-top: 50px;
+    font-size: 15px;
+    font-family: arial;
+    font-weight: 600;
+}
+.box2 span{
+    color:red;
+}
+.box2 ::placeholder{
+    padding-left: 10px;
+}
+.box2_1{
+    padding-top: 10px;
+}
+.btn1{
+    width: 150px;
+    height: 45px;
+    border: none;
+    background-color:#00bfff;
+    border-radius: 2px;
+}
+.btn1:hover{
+    background-color:#009ad6;
+}
+.mrgn{
+    margin-bottom: 15px;
+ }
+footer{
+    float: left;
+    width: 100%;
+    background-color: black;
+    min-height: 600px;
+}
+.row{
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    
+ }
+ .footer{
+    width:100%;
+    height: 200px;
+    background-color: black;
+}
+.footer1{
+    color:white;
+    font-size: 25px;
+    font-family: palatino;
+    padding-top: 50px;
+    padding-left: 230px;
+    width: 100%;
+    height: 30px;
+}
+.footer2{
+    color: white;
+    font-size: 16px;
+    padding-left: 0px;
+}
+.email{
+    width: 500px;
+    height: 50px;
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 500px;
+    padding-right: 0px;
+    margin: 2px auto;
+    padding-top: 4px;
+    display: flex;
+   
+}
+.email input{
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    float:left;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.email button{
+    width: 80px ;
+    height: 55px;
+    float: left;
+    background-color: skyblue;
+}
+.email button:hover{
+    background-color: #888888;
+}
+.b2{
+    padding-top: 35px;
+    padding-left: 230px;
+}
+.boxcenter{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.boxfooter1{
+    width: 24%;
+    float: left;
+    margin-right: 2%;
+}
+.boxfooter2{
+    width: 22%;
+    float: left;
+    font-size: 13px;
+    margin-right: 2%;
+}
+.b3{
+    padding-top: 10px;
+}
+.share{
+    width: 20px;
+    margin: 5px 2px;
+    padding-left: 44px;
+}
+.share ul a{
+    color: #fff;
+    margin-bottom: 15px;
+    display:inline-block;
+    font-size: 20px;
+}
+.share ul a:hover{
+    color: #3399ff;
+}
+.boxfooter3{
+    width: 50%;
+    float: left;
+}
+.add8{
+   padding-top: 15px;
+}
+.textcenter{
+    text-align: center;
+}
+.color1{
+    color: #888888;
+}
+
+
